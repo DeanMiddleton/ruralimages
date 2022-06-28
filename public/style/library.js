@@ -14,25 +14,6 @@ function fadeIn() {
 
 
 
-// gallery move //
-
-// var galleryX = -270;
-
-// function galleryLeft() {
-//     galleryX = galleryX + 340;
-//     let left = galleryX + "px";
-//     CLASS("gallery-inner",0).style.left = left;
-// }
-  
-// function galleryRight() {
-//     galleryX = galleryX - 340;
-//     let left = galleryX + "px";
-//     CLASS("gallery-inner",0).style.left = left;
-// } 
-
-
-  
-
   function submitEmail(){
     ID("mybtn").disabled = true;
     

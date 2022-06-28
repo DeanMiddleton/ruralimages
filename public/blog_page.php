@@ -18,21 +18,17 @@ $blog_type = blog_by_ref($blognumber);
     <link rel="icon" href="<?php echo url_for('style/assets/logos/DM_Icon.ico'); ?>" type="image/x-icon">
     <title><?php echo $blog_type['meta_title'] ?></title>
 </head>
-<body onload="fadeIn();">
+<body>
+
+<div id="promo-element">
+    <?php include(SHARED_PATH . '/sections/promo.php'); ?> <!--welcome section -->    
+</div>
 
 <?php include(SHARED_PATH . '/sections/header.php'); ?>
 
-    <div id="promo-element">
-        <?php include(SHARED_PATH . '/sections/promo.php'); ?> <!--welcome section -->    
-    </div>
+<?php include(SHARED_PATH . '/sections/blog_content.php'); ?> 
 
-    <div id="loader"> <!--  place content elements in here -->
-
-        <?php include(SHARED_PATH . '/sections/blog_content.php'); ?> 
-       
-    </div>
-
-    <?php include(SHARED_PATH . '/sections/footer.php'); ?>
+<?php include(SHARED_PATH . '/sections/footer.php'); ?>
     
 <script src="<?php echo url_for('style/library.js'); ?>"></script>
 <!-- scripting -->

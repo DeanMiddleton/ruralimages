@@ -14,20 +14,15 @@ $_SESSION['cust-logged-in'] = 0;
     <link rel="icon" href="<?php echo url_for('style/assets/logos/DM_Icon.ico'); ?>" type="image/x-icon">
     <title><?php echo $titleTagCustLogin; ?></title>
 </head>
-<body onload="fadeIn();">
+<body>
 <!-- Page Details -->
-
-<?php include(SHARED_PATH . '/sections/header.php'); ?>
-
     <div id="promo-element">
         <?php include(SHARED_PATH . '/sections/promo.php'); ?> <!--promo section -->    
     </div>
 
-    <div id="loader">
+    <?php include(SHARED_PATH . '/sections/header.php'); ?>
 
-        <?php include(SHARED_PATH . '/sections/customer_login.php'); ?>
-
-    </div>
+    <?php include(SHARED_PATH . '/sections/customer_login.php'); ?>
 
     <?php include(SHARED_PATH . '/sections/footer.php'); ?>
     

@@ -13,22 +13,15 @@
     <link rel="icon" href="<?php echo url_for('style/assets/logos/DM_Icon.ico'); ?>" type="image/x-icon">
     <title>Rural Images | Thank you</title>
 </head>
-<body onload="fadeIn();">
+<body>
 
-<?php include(SHARED_PATH . '/sections/header.php'); ?>
-
-<div id="promo-element">
+    <div id="promo-element">
         <?php include(SHARED_PATH . '/sections/promo.php'); ?> <!--welcome section -->    
     </div>
 
+    <?php include(SHARED_PATH . '/sections/header.php'); ?>
 
-    <div id="loader"> <!--  place content elements in here -->
-
-        <?php include(SHARED_PATH . '/sections/reset_password.php'); ?>
-
-       
-       
-    </div>
+    <?php include(SHARED_PATH . '/sections/reset_password.php'); ?>
 
     <?php include(SHARED_PATH . '/sections/footer.php'); ?>
     

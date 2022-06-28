@@ -54,23 +54,6 @@ h1, h2, h3, h4, h5, h6, p, span, a {
     color: black;
 }
 
-/* fonts */
-/* Old to be delete when finished */
-/* .txt-banner {font-size: 2.1em; letter-spacing: -2px;}
-.txt-heading {font-size: 1.7em; letter-spacing: -3px;}
-.txt-sub {font-size: 1.6em; letter-spacing: -2px;}
-.txt-main {font-size: 1.1em; letter-spacing: -1px;}
-.txt-detail {font-size: 0.8em; letter-spacing: -1px;}
-.txt-upper {text-transform: uppercase;}
-.txt-center {text-align: center;}
-.txt-left {text-align: left;}
-.txt-right {text-align: right;}
-.txt-normal {font-weight: 400;}
-.txt-bold {font-weight:bold;}
-.txt-bolder {font-weight:bolder;} */
-
-
-
 
 /* new */
 .text-upper {text-transform: uppercase;}
@@ -377,18 +360,8 @@ h1, h2, h3, h4, h5, h6, p, span, a {
   #loader {
       display: block;
       opacity: 0%;
-      transition: 0.5s;
+      transition: 0.25s;
   }
-
-  /* old needs deleteing */
-  /* .main-con {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 0px auto;
-    padding: 10px;
-    background-color: white; 
-  } */
 
   /* Global Header Title */
   .title-header {
@@ -400,14 +373,7 @@ h1, h2, h3, h4, h5, h6, p, span, a {
     color: white;
   }
 
-  /* Full width Container 100% */
-  /* .con-100 {
-    display: block;
-    width: 100%;
-    max-width: var(--mainWidth);
-    height: auto;
-    margin: 0px auto;
-  } */
+  
 
   .col-40-60, .col-60-40, .col-50-50, .col-100, .col-70-30, .col-30-70 {
     display: grid;

@@ -11,7 +11,7 @@
     <link rel="icon" href="<?php echo url_for('style/assets/logos/DM_Icon.ico'); ?>" type="image/x-icon">
     <title><?php echo $pages[0]['meta_title'] ?></title>
 </head>
-<body onload="fadeIn();">
+<body>
 
     <div id="promo-element">
         <?php include(SHARED_PATH . '/sections/promo.php'); ?> <!--promo section -->    
@@ -19,14 +19,11 @@
 
     <?php include(SHARED_PATH . '/sections/header.php'); ?>
 
-    <div id="loader"> <!--  place content elements in here -->
 
-        <?php include(SHARED_PATH . '/sections/hero.php'); ?> <!--welcome section -->
+    <?php include(SHARED_PATH . '/sections/hero.php'); ?> <!--welcome section -->
         
 
-    </div>
-    
-        <?php include(SHARED_PATH . '/sections/footer.php'); ?>
+    <?php include(SHARED_PATH . '/sections/footer.php'); ?>
     
 <script src="<?php echo url_for('style/library.js'); ?>"></script>
 <!-- scripting -->

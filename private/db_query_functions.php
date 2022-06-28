@@ -14,7 +14,7 @@
     $sql = "SELECT ref, title, orientation, half_size, alt_tag FROM images ";
     $result = mysqli_query($db,$sql);
     return $result;
-  }  
+  }
 
   function image_by_id($id) {
 

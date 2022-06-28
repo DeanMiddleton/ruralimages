@@ -11,20 +11,16 @@
     <link rel="icon" href="<?php echo url_for('style/assets/logos/DM_Icon.ico'); ?>" type="image/x-icon">
     <title><?php echo $pages[1]['meta_title'] ?></title>
 </head>
-<body onload="fadeIn();">
+<body>
 <!-- Page Details -->
-
-<?php include(SHARED_PATH . '/sections/header.php'); ?>
 
     <div id="promo-element">
         <?php include(SHARED_PATH . '/sections/promo.php'); ?> <!--welcome section -->    
     </div>
 
-    <div id="loader">
+    <?php include(SHARED_PATH . '/sections/header.php'); ?>
 
-        <?php include(SHARED_PATH . '/sections/gallery-feed.php'); ?>
-
-    </div>
+    <?php include(SHARED_PATH . '/sections/gallery-feed.php'); ?>
 
     <?php include(SHARED_PATH . '/sections/footer.php'); ?>
     
