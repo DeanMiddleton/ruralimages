@@ -19,7 +19,7 @@
 
             <!-- logo -->
             <a href="<?php echo url_for('index.php');?>" class="head__logo-outer">
-                <img class="head__logo" src="<?php echo url_for('style/assets/logos/Dean Middleton Rural Images Photography.png'); ?>" alt="">
+                <img class="head__logo" src="<?php echo url_for('style/assets/logos/Dean Middleton Rural Images Photography.png'); ?>"  onload="fadeIn();" alt="Rural Images Landscape Photography">
             </a>
 
             <nav class="head__top-menu">
@@ -32,12 +32,12 @@
             <!-- login & basket links -->
             <div class="head__log-in-area-outer">
                 <a onclick="logIn();" class="head__log-in-logo-outer" href="<?php echo url_for('portal.php');?>">
-                    <img class="head__log-in-logo" src="<?php echo url_for('style/assets/logos/login.png'); ?>" alt="">
+                    <img class="head__log-in-logo" src="<?php echo url_for('style/assets/logos/login.png'); ?>" alt=""  onload="fadeIn();">
                     <span class="head__log-in-text">Sign In</span>
                 </a>
 
                 <a onclick="cartOut();" class="head__cart-logo-outer" href="<?php echo url_for('cart.php'); ?>">
-                    <img class="head__cart-logo" src="<?php echo url_for('style/assets/logos/shopping-cart-icon.png');?>" alt="">
+                    <img class="head__cart-logo" src="<?php echo url_for('style/assets/logos/shopping-cart-icon.png');?>" alt=""  onload="fadeIn();">
                     <span class="head__cart-counter"><?php echo $countLine; ?></span>
                 </a>
             </div>
@@ -60,7 +60,7 @@
 
         <div class="main-menu-advert-area">
             <?php echo "<a href='". url_for('image.php?id=24') . "' class='main-menu-advert'>"; ?>
-                <img style="display: absolute; width:280px;" src="<?php echo url_for('style/assets/thumbnails/seed_pod_sky.jpg'); ?>" alt="">
+                <img style="display: absolute; width:280px;" src="<?php echo url_for('style/assets/thumbnails/seed_pod_sky.jpg'); ?>" alt=""  onload="fadeIn();">
             </a>
         </div>
 

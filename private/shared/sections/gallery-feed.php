@@ -42,7 +42,7 @@
             <div class="thumb-container bg-white shadow-light">
 
             <a class='thumb-outer' href="<?php echo url_for('image.php?id=' . h(u($row["ref"]))); ?>">
-                <?php echo"<img class='thumb " .$row['orientation'] . "' src='" . $row["thumbnail"] . "' alt='" . $row["alt_tag"] . "'>"; ?>
+                <?php echo"<img class='thumb " .$row['orientation'] . "' src='" . $row["thumbnail"] . "' alt='" . $row["alt_tag"] . "'  onload='fadeIn();''>"; ?>
             </a>
 
             <div class="thumb-title-surround">

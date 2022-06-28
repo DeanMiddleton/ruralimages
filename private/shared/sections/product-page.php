@@ -10,7 +10,7 @@
 
          <?php echo"<div class='" . $rows['orientation'] . " '>"; ?>
             <div class="image-inner">
-                <?php echo "<img class='image' src='" . $rows["full_size"] . "' alt='" . $rows["alt_tag"] . "'>" ?>
+                <?php echo "<img class='image' src='" . $rows["full_size"] . "' alt='" . $rows["alt_tag"] . "'  onload='fadeIn();'>" ?>
             </div>
 
         <div class="product__label-outer">
@@ -68,10 +68,10 @@
         <div class="view-outer">
             <img class="view-outer__background-wide" src="<?php echo url_for('style/assets/backgrounds/wood-panel.jpg'); ?>" alt="">
             <div class="view-outer__pic-onwall">
-                <?php echo "<img class='image" . $rows['orientation'] . "' src='" . $rows["thumbnail"] . "' alt=''>" ?>
+                <?php echo "<img class='image" . $rows['orientation'] . "' src='" . $rows["thumbnail"] . "' alt='" . $rows["alt_tag"] . "'  onload='fadeIn();'>" ?>
             </div>
             <div class="view-outer__blue-chair">
-                <img src="<?php echo url_for('style/assets/backgrounds/sofa-blue.png'); ?>" alt="">
+                <img src="<?php echo url_for('style/assets/backgrounds/sofa-blue.png'); ?>"  onload="fadeIn();" alt="">
             </div>
         </div> 
     </div>

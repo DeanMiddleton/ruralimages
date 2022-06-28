@@ -14,8 +14,8 @@
     <div class="container">
         
         <div class="col-60-40">
-            <div class="image-con-SW" onload="fadeIn();">
-                <img class="pic" src="<?php echo url_for('style/assets/backgrounds/me2-2.jpg'); ?>" alt="">
+            <div class="image-con-SW" >
+                <img class="pic" src="<?php echo url_for('style/assets/backgrounds/me2-2.jpg'); ?>" alt="Dean Middleton"  onload="fadeIn();">
             </div> 
 
             <div class="container">
@@ -24,7 +24,7 @@
             </div> 
 
             <div class="image-con-FW" style="max-width:400px; min-height:100%;" onload="fadeIn();">
-                <img class="pic" src="<?php echo url_for('style/assets/backgrounds/me2-2.jpg'); ?>" alt="">
+                <img class="pic" src="<?php echo url_for('style/assets/backgrounds/me2-2.jpg'); ?>" alt="Dean Middleton" onload="fadeIn();">
             </div> 
          </div>
     </div>

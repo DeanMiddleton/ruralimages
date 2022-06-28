@@ -36,7 +36,7 @@
               <div class="cart__order-line-details">
                   <?php $imagefile = image_by_id($orderline['image-number']);?>
                       <div class="cart-thumb-outer">
-                          <?php echo  "<img class='" . $imagefile['orientation'] . "' src='" . url_for( $imagefile['thumbnail']) . "' alt='" . $imagefile['thumbnail'] . "'>"; ?>
+                          <?php echo  "<img class='" . $imagefile['orientation'] . "' src='" . url_for( $imagefile['thumbnail']) . "' alt='" . $imagefile['thumbnail'] . "' onload='fadeIn();'>"; ?>
                       </div>
 
                   <div class="cart__line-details-outer">
@@ -48,7 +48,7 @@
                       <div class="cart__edit-outer">    
                           <a class='cart__edit-icon-outer' href='<?php echo url_for('cart.php?line-number=' . $counter);?>'>
                               <?php $counter++ ?>             
-                              <img class="cart__small-icon" src="<?php echo url_for('style/assets/logos/bin.png'); ?>" alt="">
+                              <img class="cart__small-icon" src="<?php echo url_for('style/assets/logos/bin.png'); ?>" alt=""  onload="fadeIn();">
                               <p class='cart__icon-text'>remove</p>
                           </a>
                       </div>
@@ -163,7 +163,7 @@
             <!-- EMPTY BASKET -->
                 <div class="cart__empty">
                   <h2 class='txt-sub txt-center'>Your basket appears to be empty!</h2>
-                  <img class="cart__logo" src="<?php echo url_for('style/assets/logos/shopping-cart-icon.png'); ?>" alt="">
+                  <img class="cart__logo" src="<?php echo url_for('style/assets/logos/shopping-cart-icon.png'); ?>" onload="fadeIn();" alt="">
                 
                 </div>
             </div>

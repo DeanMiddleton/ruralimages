@@ -15,7 +15,7 @@
 <div class="blog-content-container">     
        
     <div class="blog-image-outer">
-        <img class="blog-image" src="<?php echo $blog_type['image']; ?>" alt="">
+        <img class="blog-image" src="<?php echo $blog_type['image']; ?>" alt="<?php echo $blog_type['title']; ?>" onload="fadeIn();">
     </div>
 
     <div class="col-100">

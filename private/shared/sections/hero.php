@@ -20,7 +20,7 @@
 
             echo "<a id='pic" . $x . "' class='hero-pic-outer' href='". url_for('image.php?id=' . h(u($image['ref']))). "'>";
         
-            echo "<img class='hero-pic' src='" . $image["full_size"] . "' alt='" . $image["alt_tag"] . "'>"; ?>
+            echo "<img class='hero-pic' src='" . $image["full_size"] . "' alt='" . $image["alt_tag"] . " onload='fadeIn();'>"; ?>
             
             </a>
             
@@ -52,7 +52,7 @@
 
         <div class="link-desc">
             <a class="third-link" href="gallery.php">
-                <img src="<?php echo url_for('style/assets/thumbnails/britanna_views.jpg'); ?>" alt="">
+                <img src="<?php echo url_for('style/assets/thumbnails/britanna_views.jpg'); ?>"  onload="fadeIn();" alt="">
                 <div class="headline-outer">
                     <h3 class="headline text-spacing-tight font-semibold text-upper text-3xl">Portfolio Gallery</h3>
                 </div>
@@ -61,7 +61,7 @@
         </div>
         <div class="link-desc">
             <a class="third-link" href="blog.php">
-                <img src="<?php echo url_for('style/assets/backgrounds/blog-pic-thumb.jpg'); ?>" alt="">
+                <img src="<?php echo url_for('style/assets/backgrounds/blog-pic-thumb.jpg'); ?>" onload="fadeIn();"alt="">
                 <div class="headline-outer">
                     <h3 class="headline text-spacing-tight font-semibold text-upper text-3xl">My Latest Blogs</h3>
                 </div>
@@ -70,7 +70,7 @@
         </div>
         <div class="link-desc">
             <a class="third-link" href="events.php">
-                <img src="<?php echo url_for('style/assets/backgrounds/events-pic-thumb.jpg'); ?>" alt="">
+                <img src="<?php echo url_for('style/assets/backgrounds/events-pic-thumb.jpg'); ?>"  onload="fadeIn();" alt="">
                 <div class="headline-outer">
                     <h3 class="headline text-spacing-tight font-semibold text-upper text-3xl">Events and Shows</h3>
                 </div>
@@ -83,7 +83,7 @@
 
 <div class="container">
     <div class="para-section">
-        <img class="fixed-pic" src="<?php echo url_for('style/assets/full-web/holkham_dunes.jpg'); ?>" alt="">
+        <img class="fixed-pic" src="<?php echo url_for('style/assets/full-web/holkham_dunes.jpg'); ?>"  onload="fadeIn();" alt="">
         <h4 class="para-label">If you would like to discuss any of my work or have any requirements please get in touch!</h4>
         <a class="para-btn text-xl text-center font-normal" href="contact.php">contact me</a>
     </div>

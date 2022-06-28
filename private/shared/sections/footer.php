@@ -11,7 +11,7 @@
 <div class="footer">
     <div class="footer__inner">
         <div class="footer__title">
-            <img class="footer__logo" src="<?php echo url_for('style/assets/logos/Dean Middleton Rural Images Photography.png'); ?>" alt="">
+            <img class="footer__logo" src="<?php echo url_for('style/assets/logos/Dean Middleton Rural Images Photography.png'); ?>"  onload="fadeIn();" alt="">
         </div>
 
         <div class="col-60-40">
@@ -61,10 +61,10 @@
                 
         </div>
             <a class="txt-detail txt-upper txt-center"  href="<?php echo url_for('admin-dash.php');?>">
-                <img style='width:20px;' src="<?php echo url_for('style/assets/logos/admin.png'); ?>" alt="">
+                <img style='width:20px;' src="<?php echo url_for('style/assets/logos/admin.png'); ?>" alt="" onload="fadeIn();">
             </a>
             <a class="txt-detail txt-upper txt-center"  href="<?php echo url_for('summary.php');?>">
-                <img style='width:20px;' src="<?php echo url_for('style/assets/logos/summary.png'); ?>" alt="">
+                <img style='width:20px;' src="<?php echo url_for('style/assets/logos/summary.png'); ?>" alt="" onload="fadeIn();">
             </a>
     </div>
        
