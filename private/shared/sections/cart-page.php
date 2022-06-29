@@ -23,7 +23,7 @@
           <div class="container" style="max-width: 500px; margin: 0 auto;">
           
 <?php         
-              echo "<h2 class='txt-sub txt-normal'>Shopping Cart (" . $countLine . ")</h2>";
+              echo "<h2 class='text-3xl text-spacing-tighter font-normal'>Shopping Cart (" . $countLine . ")</h2>";
               $orderTotal = 0;
               $counter = 0;
                   foreach ($_SESSION['orders'] as $orderline) {
@@ -40,10 +40,10 @@
                       </div>
 
                   <div class="cart__line-details-outer">
-                      <?php echo "<p class='txt-sub'>" . $orderline['image'] . "</p>
-                                  <p class='txt-detail'>". $orderline['size'] ."</p>
-                                  <p class='txt-main'> £". $orderline['cost'] ."</p>
-                                  <p class='txt-main'>Quantity : ". $orderline['quantity'] ."</p>" ?><br>
+                      <?php echo "<p class='text-2xl text-left font-normal text-spacing-tight'>" . $orderline['image'] . "</p>
+                                  <p class='text-lg text-left font-normal text-spacing-tight'>". $orderline['size'] ."</p>
+                                  <p class='text-lg text-left font-normal text-spacing-tight'> £". $orderline['cost'] ."</p>
+                                  <p class='text-lg text-left font-normal text-spacing-tight'>Quantity : ". $orderline['quantity'] ."</p>" ?><br>
 
                       <div class="cart__edit-outer">    
                           <a class='cart__edit-icon-outer' href='<?php echo url_for('cart.php?line-number=' . $counter);?>'>
@@ -69,13 +69,13 @@
                   <?php echo $clearLogE; ?>
                   <!-- order totals -->
                   <div class="cart__sub-total-outer">
-                      <?php echo "<p class='txt-main txt-left'>Sub-Total:</p><p class='txt-main txt-right'>£" . $orderTotal . "</p>" ?>
+                      <?php echo "<p class='text-base text-left font-normal text-spacing-tight'>Sub-Total:</p><p class='text-base text-right font-normal text-spacing-tight'>£" . $orderTotal . "</p>" ?>
                   </div>
                   <div class="cart__sub-total-outer">
-                      <?php echo "<p class='txt-detail'>Excluding Delivery</p><p class='txt-detail txt-right'>£" . $delivery . "</p>" ?><br>
+                      <?php echo "<p class='text-base text-left font-normal text-spacing-tight'>Excluding Delivery</p><p class='text-base text-right font-normal text-spacing-tight'>£" . $delivery . "</p>" ?><br>
                   </div>
                   <div class="cart__sub-total-outer">
-                      <?php echo "<p class='txt-detail'>Grand Total</p><p class='txt-main txt-right'>£" . $grandTotal . "</p>" ?><br>
+                      <?php echo "<p class='text-lg text-left font-semibold text-spacing-tight'>Grand Total</p><p class='text-lg text-right font-semibold text-spacing-tight'>£" . $grandTotal . "</p>" ?><br>
                   </div>
 
                   <!-- create customer acct or loggin button will disapear when loggin in -->
@@ -148,10 +148,10 @@
         <!-- DELIVERY NOTICE -->
               </div>
                   <div class="cart__del-outer">
-                      <p class="txt-main">Delivery Options</p>
-                      <p class="txt-detail">Standard Delivery / Packing: £9.99</p>
-                      <p class="txt-detail">Free for orders over £100</p>
-                      <p class="txt-detail">Delivery in 10-14 Days</p>
+                      <p class="text-xl text-left font-normal text-spacing-tight">Delivery Options</p>
+                      <p class="text-base text-left font-normal text-spacing-tight">Standard Delivery / Packing: £9.99</p>
+                      <p class="text-base text-left font-normal text-spacing-tight">Free for orders over £100</p>
+                      <p class="text-base text-left font-normal text-spacing-tight">Delivery in 10-14 Days</p>
                   </div>
           </div>
 
@@ -162,7 +162,7 @@
             <div class="main-con">
             <!-- EMPTY BASKET -->
                 <div class="cart__empty">
-                  <h2 class='txt-sub txt-center'>Your basket appears to be empty!</h2>
+                  <h2 class='text-4xl text-center font-bold text-spacing-tighter'>Your basket appears to be empty!</h2>
                   <img class="cart__logo" src="<?php echo url_for('style/assets/logos/shopping-cart-icon.png'); ?>" onload="fadeIn();" alt="">
                 
                 </div>
