@@ -20,7 +20,7 @@
 
             echo "<a id='pic" . $x . "' class='hero-pic-outer' href='". url_for('image.php?id=' . h(u($image['ref']))). "'>";
         
-            echo "<img class='hero-pic' src='" . $image["full_size"] . "' alt='" . $image["alt_tag"] . " onload='fadeIn();'>"; ?>
+            echo "<img class='hero-pic' src='" . $image["full_size"] . "' alt='" . $image["alt_tag"] . "' onload='fadeIn();'>"; ?>
             
             </a>
             
@@ -31,7 +31,7 @@
     <div class="headline-outer">
         <h1 class="headline text-6xl text-spacing-tighter text-upper font-bold">Beautiful moody images</h1>
         <h2 class="headline text-4xl text-spacing-tighter font-normal text-italic color-grey">created by mother nature.</h2><br>
-        <a class="button text-xl text-center font-normal" href="gallery.php">gallery ></a>
+        <a class="button text-xl text-center font-normal" href="<?php echo url_for('gallery.php'); ?>">gallery ></a>
     </div>
 
 
@@ -51,7 +51,7 @@
     <div class="container-3"  style="background-color:white;">
 
         <div class="link-desc">
-            <a class="third-link" href="gallery.php">
+            <a class="third-link" href="<?php echo url_for('gallery.php'); ?>">
                 <img src="<?php echo url_for('style/assets/thumbnails/britanna_views.jpg'); ?>"  onload="fadeIn();" alt="">
                 <div class="headline-outer">
                     <h3 class="headline text-spacing-tight font-semibold text-upper text-3xl">Portfolio Gallery</h3>
@@ -60,7 +60,7 @@
             <p class="text-lg text-justify text-spacing-tight font-normal color-grey">I have ever increase portfolio gallery for you peruse through. Some are available for purchase in a Open or Limited Edition Print and should you have any special requirements just let me know...</p>
         </div>
         <div class="link-desc">
-            <a class="third-link" href="blog.php">
+            <a class="third-link" href="<?php echo url_for('blog.php'); ?>>
                 <img src="<?php echo url_for('style/assets/backgrounds/blog-pic-thumb.jpg'); ?>" onload="fadeIn();"alt="">
                 <div class="headline-outer">
                     <h3 class="headline text-spacing-tight font-semibold text-upper text-3xl">My Latest Blogs</h3>
@@ -69,7 +69,7 @@
             <p class="text-lg text-justify text-spacing-tight font-normal color-grey">I try to comment on places I visit, images I have taken and sometimes technics I have to produce my work. I would be happy to share them with you...</p>
         </div>
         <div class="link-desc">
-            <a class="third-link" href="events.php">
+            <a class="third-link" href="<?php echo url_for('blog.php'); ?>">
                 <img src="<?php echo url_for('style/assets/backgrounds/events-pic-thumb.jpg'); ?>"  onload="fadeIn();" alt="">
                 <div class="headline-outer">
                     <h3 class="headline text-spacing-tight font-semibold text-upper text-3xl">Events and Shows</h3>
