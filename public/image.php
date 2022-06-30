@@ -16,7 +16,7 @@ $meta = image_by_id($pagenumber);
     <meta name="description" content="<?php echo $meta['meta_desc']; ?>">
     <link rel="stylesheet" href="<?php echo url_for('style/stylesheets/global.css'); ?>">
     <link rel="icon" href="<?php echo url_for('style/assets/logos/DM_Icon.ico'); ?>" type="image/x-icon">
-    <title>Rural Images | <?php echo $meta['meta_title']; ?></title>
+    <title><?php echo $meta['meta_title']; ?></title>
 </head>
 <body>
     <div id="promo-element">
