@@ -1,6 +1,8 @@
 <?php
 require_once '../private/initialise.php'; 
-$_SESSION['cust-logged-in'] = 0;
+if ($_SESSION['cust-logged-in'] == 1) {header('Location: portal.php');}
+if ($_SESSION['admin-email'] == 1) {header('Location: admin-dash.php');} // check if logged in
+// $_SESSION['cust-logged-in'] = 0;
 ?>
 
 <!DOCTYPE html>

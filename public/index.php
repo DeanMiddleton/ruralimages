@@ -1,4 +1,4 @@
-<?php require_once '../private/initialise.php'; ?>
+<?php require_once '../private/initialise.php';?>
 
 <!DOCTYPE html>
 <html lang="en">

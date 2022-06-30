@@ -9,6 +9,8 @@
 <?php
     $customer = customer_by_id($_SESSION['email']);
     $orders = order_by_id($_SESSION['email']);
+
+    if(isset($_POST["logOut"])) {$_SESSION['cust-logged-in'] = 0; header('Location: portal.php');}
 ?>
 
     <div class='title-header'>
@@ -66,7 +68,9 @@
                 <?php } ?>
         
         </div>
-        <a class="btn text-sm text-normal text-left text-spacing-tight text-color-black edit-title" href="login.php">Log Out</a>
+        <form action="<?php echo url_for('portal.php'); ?>" method="POST">
+            <input class="btn text-sm text-normal text-left text-spacing-tight text-color-black edit-title" type="submit" name="logOut" value="Log Out">
+        </form>
 </div>
 
 

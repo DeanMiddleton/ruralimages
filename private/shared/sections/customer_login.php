@@ -50,7 +50,7 @@
 
             <p class="text-2xl text-center text-upper font-bold text-spacing-tight">Customer Login</p><br>
 
-            <form action="<?php echo url_for('login.php'); ?>" method="POST" class="cust-login" onsubmit="">
+            <form action="<?php echo url_for('login.php'); ?>" method="POST" class="cust-login">
 
                 <div class="form-input">
                     <p class="text-xl text-left font-normal text-spacing-tight">Email</p>
@@ -58,7 +58,14 @@
                     <p class="text-xl text-left font-normal text-spacing-tight">Password</p>
                     <input class="text-sm text-left font-normal text-spacing-tight" id="cust-password" type="text" name="cust-password" placeholder="*Password...." required>
                 </div>
-                    <input class="btn txt-main txt-center" id="mybtn" type="submit" value="SUBMIT">
+
+                    <div class="grid grid-cols-2">
+                        <input class="btn txt-main txt-left" id="mybtn" type="submit" value="SUBMIT">
+
+                        <a class="txt-detail txt-upper txt-right"  href="<?php echo url_for('admin-dash.php');?>">
+                            <img style='width:20px;' src="<?php echo url_for('style/assets/logos/admin.png'); ?>" alt="">
+                        </a>
+                    </div>
             </form>
 
         </div>

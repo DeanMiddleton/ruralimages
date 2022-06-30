@@ -31,7 +31,7 @@
         
             <!-- login & basket links -->
             <div class="head__log-in-area-outer">
-                <a onclick="logIn();" class="head__log-in-logo-outer" href="<?php echo url_for('portal.php');?>">
+                <a onclick="logIn();" class="head__log-in-logo-outer" href="<?php echo url_for('login.php');?>">
                     <img class="head__log-in-logo" src="<?php echo url_for('style/assets/logos/login.png'); ?>" alt=""  onload="fadeIn();">
                     <span class="head__log-in-text">Sign In</span>
                 </a>

@@ -18,9 +18,9 @@
 
             $image = image_by_id($hero_pics[$x]);
 
-            echo "<a id='pic" . $x . "' class='hero-pic-outer' href='". url_for('image.php?id=' . h(u($image['ref']))). "'>";
+            echo "<a id='pic" . $x . "' class='hero-pic-outer' href='". url_for('image.php?id=' . h(u($image['ref']))). "'>";?>
         
-            echo "<img class='hero-pic' src='" . $image["full_size"] . "' alt='" . $image["alt_tag"] . "' onload='fadeIn();'>"; ?>
+            <img class='hero-pic' src='<?php echo url_for($image["full_size"]);?>' alt='<?php echo url_for($image["alt_tag"]); ?>'>
             
             </a>
             
@@ -60,7 +60,7 @@
             <p class="text-lg text-justify text-spacing-tight font-normal color-grey">I have ever increase portfolio gallery for you peruse through. Some are available for purchase in a Open or Limited Edition Print and should you have any special requirements just let me know...</p>
         </div>
         <div class="link-desc">
-            <a class="third-link" href="<?php echo url_for('blog.php'); ?>>
+            <a class="third-link" href="<?php echo url_for('blog.php'); ?>">
                 <img src="<?php echo url_for('style/assets/backgrounds/blog-pic-thumb.jpg'); ?>" onload="fadeIn();"alt="">
                 <div class="headline-outer">
                     <h3 class="headline text-spacing-tight font-semibold text-upper text-3xl">My Latest Blogs</h3>
@@ -70,7 +70,7 @@
         </div>
         <div class="link-desc">
             <a class="third-link" href="<?php echo url_for('blog.php'); ?>">
-                <img src="<?php echo url_for('style/assets/backgrounds/events-pic-thumb.jpg'); ?>"  onload="fadeIn();" alt="">
+                <img src="<?php echo url_for('style/assets/backgrounds/events-pic-thumb.jpg'); ?>" onload="fadeIn();" alt="">
                 <div class="headline-outer">
                     <h3 class="headline text-spacing-tight font-semibold text-upper text-3xl">Events and Shows</h3>
                 </div>

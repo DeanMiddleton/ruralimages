@@ -5,6 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <script> window.location.href = "public/index.php";</script>     
+    <script> window.location.href = "public/";</script>     
 </body>
 </html>

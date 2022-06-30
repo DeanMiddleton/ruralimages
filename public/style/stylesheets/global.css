@@ -18,13 +18,10 @@
 } */
 
 :root {
-    /* --colorDecoDarkGrey: rgb(89,89,89);
-    --colorDecoLightGrey: rgb(112,132,129);
-    --colorDecoCyan: rgb(196, 214, 248); */
+  
     --colorDecoNeutral: rgb(235, 243, 242);
     --colorDecoRed: rgb(150, 16, 29);
-    /* --colorDecoBrown: rgb(191,160,140);
-    --colorDecoGreen: rgb(101, 212, 91); */
+    
 
     --fontMain: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --fontSize: 16px;
@@ -533,7 +530,7 @@ h1, h2, h3, h4, h5, h6, p, span, a {
   /* BUTTONS */
 
   .btn {
-    display: inline-block;
+    display: block;
     margin: 20px auto;
     padding: 5px 20px;
     border: 1px rgb(0, 100, 100) solid;

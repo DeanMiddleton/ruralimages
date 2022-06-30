@@ -172,7 +172,12 @@
 ?>
       </div>
     </div>
+
+           
 </div>
+            <a class="txt-detail txt-upper txt-center"  href="<?php echo url_for('summary.php');?>">
+                <img style='width:20px;' src="<?php echo url_for('style/assets/logos/summary.png'); ?>" alt="" onload="fadeIn();">
+            </a>
 
 <script src="<?php echo url_for('style/library.js'); ?>"></script>
 </body>
