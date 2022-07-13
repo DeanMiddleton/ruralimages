@@ -60,7 +60,7 @@
             <p class="text-lg text-justify text-spacing-tight font-normal color-grey">I have ever increase portfolio gallery for you peruse through. Some are available for purchase in a Open or Limited Edition Print and should you have any special requirements just let me know...</p>
         </div>
         <div class="link-desc">
-            <a class="third-link" href="<?php echo url_for('blog.php'); ?>">
+            <a class="third-link" href="<?php echo url_for('blogs.php'); ?>">
                 <img src="<?php echo url_for('style/assets/backgrounds/blog-pic-thumb.jpg'); ?>" onload="fadeIn();"alt="">
                 <div class="headline-outer">
                     <h3 class="headline text-spacing-tight font-semibold text-upper text-3xl">My Latest Blogs</h3>

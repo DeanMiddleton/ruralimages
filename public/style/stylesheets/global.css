@@ -605,7 +605,7 @@ h1, h2, h3, h4, h5, h6, p, span, a {
     border-radius: 5px;
     width: 100%;
     height:250px;
-    box-shadow: 0 10px 10px rgb(199, 199, 199);
+    /* box-shadow: 0 10px 10px rgb(199, 199, 199); */
   }
   
   .blog-image {
