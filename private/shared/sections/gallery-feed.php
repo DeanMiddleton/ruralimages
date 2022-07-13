@@ -45,9 +45,9 @@
                 <?php echo"<img class='thumb " .$row['orientation'] . "' src='" . $row["thumbnail"] . "' alt='" . $row["alt_tag"] . "'  onload='fadeIn();''>"; ?>
             </a>
 
-            <div class="thumb-title-surround">
+            <a class="thumb-title-surround" href="<?php echo url_for('image.php?id=' . h(u($row["ref"]))); ?>">
                 <?php echo"<div class='thumb-title text-base text-upper text-center text-spacing-tight'>" . $row['title'] . "</div>"; ?>
-            </div>
+            </a>
         </div>
 
         <?php }

@@ -4,9 +4,8 @@
   margin: 20px auto;
   width: auto;
   max-width: 768px;
-  border: 1px rgb(199, 199, 199) solid;
+  
   border-radius: 5px;
-  box-shadow: 0 5px 20px rgb(199, 199, 199);
 }
 
 .order-table > p {
