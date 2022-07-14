@@ -16,50 +16,48 @@
         <div class="product__label-outer">
             <div class="product__info-section">
                 <?php echo "<h1 class='text-4xl text-normal text-spacing-tighter' style='color:var(--colorDecoRed)'>" . $rows["title"] . "</h1>";?><br>
-                <?php echo"<p class='text-xl text-normal text-spacing-tight'>" . $rows['meta_desc'] . "</p>"; ?><br>
+                <?php echo"<p class='text-lg text-spacing-tight text-color-grey'>" . $rows['page_desc'] . "</p><br>"; ?> 
 
-        <div class="con">
+                <div class="con">
 
-            <!-- <?php $product_type = all_products(); // dont use anymore ?>  -->
+                    <!-- <?php $product_type = all_products(); // dont use anymore ?>  -->
 
-                <p class="text-base text-spacing-tight">Choose which size you require.</p>
-         
-                <form action="<?php echo url_for('gallery.php'); ?>" method="POST">     
-                    <?php 
-                        echo"<input name='image-name' type='hidden' value='" . $rows["title"] . "'>";
-                        echo"<input name='page-number' class='txt-detail' type='hidden' value='" . $pagenumber . "'>"; 
-                    ?>
+                        <p class="text-base text-spacing-tight">Choose which size you require.</p>
+                
+                        <form action="<?php echo url_for('gallery.php'); ?>" method="POST">     
+                            <?php 
+                                echo"<input name='image-name' type='hidden' value='" . $rows["title"] . "'>";
+                                echo"<input name='page-number' class='txt-detail' type='hidden' value='" . $pagenumber . "'>"; 
+                            ?>
 
-                    <select name="image-size" id="image-size" onsubmit="" onchange="">
+                            <select name="image-size" id="image-size" onsubmit="" onchange="">
 
-                        <?php echo "<option class='text-sm text-spacing-tight' value='" . $rows['prod1_desc'] . "|" . $rows['prod1_price'] . "'>" . $rows['prod1_desc'] . ", £" . $rows['prod1_price'] . "</option>" ?>
-                        <?php echo "<option class='text-sm text-spacing-tight' value='" . $rows['prod2_desc'] . "|" . $rows['prod2_price'] . "'>" . $rows['prod2_desc'] . ", £" . $rows['prod2_price'] . "</option>" ?>
-                        <?php echo "<option class='text-sm text-spacing-tight' value='" . $rows['prod3_desc'] . "|" . $rows['prod3_price'] . "'>" . $rows['prod3_desc'] . ", £" . $rows['prod3_price'] . "</option>" ?>
-                        <?php echo "<option class='text-sm text-spacing-tight' value='" . $rows['prod4_desc'] . "|" . $rows['prod4_price'] . "'>" . $rows['prod4_desc'] . ", £" . $rows['prod4_price'] . "</option>" ?>
-                          
-                    </select>
+                                <?php echo "<option class='text-sm text-spacing-tight' value='" . $rows['prod1_desc'] . "|" . $rows['prod1_price'] . "'>" . $rows['prod1_desc'] . ", £" . $rows['prod1_price'] . "</option>" ?>
+                                <?php echo "<option class='text-sm text-spacing-tight' value='" . $rows['prod2_desc'] . "|" . $rows['prod2_price'] . "'>" . $rows['prod2_desc'] . ", £" . $rows['prod2_price'] . "</option>" ?>
+                                <?php echo "<option class='text-sm text-spacing-tight' value='" . $rows['prod3_desc'] . "|" . $rows['prod3_price'] . "'>" . $rows['prod3_desc'] . ", £" . $rows['prod3_price'] . "</option>" ?>
+                                <?php echo "<option class='text-sm text-spacing-tight' value='" . $rows['prod4_desc'] . "|" . $rows['prod4_price'] . "'>" . $rows['prod4_desc'] . ", £" . $rows['prod4_price'] . "</option>" ?>
+                                
+                            </select>
 
-                    <br><br>
-                        <p class="text-base text-spacing-tight">How many do you require.</p>
-                        <input class="text-sm" type="number" id="image-quantity" name="image-quantity" value="1" min="1" max="10">
-                    <br><br>
-                        <input id="orderBtn" class="button" type="submit" value="Add to cart">
-                </form>
-                    <br><br><br>
-                    <p class="text-base text-spacing-tight color-contrast1">All images are printed to order on high gloss 240gms papers. For larger prints I use an external printer so please allow 10-14 days for delivery. I will look over all images prior to despatch and a signed certificate of authenticity will be included. Should you require any special orders or framing please contact me via the contact me button in the header. Thank you.</p>
-        </div>
+                            <br><br>
+                                <p class="text-base text-spacing-tight">How many do you require.</p>
+                                <input class="text-sm" type="number" id="image-quantity" name="image-quantity" value="1" min="1" max="10">
+                            <br><br>
+                                <input id="orderBtn" class="button" type="submit" value="Add to cart">
+                        </form>
+                            <br><br><br>
+                            <p class="text-base text-spacing-tight color-contrast1">All images are printed to order on high gloss 240gms papers. For larger prints I use an external printer so please allow 10-14 days for delivery. I will look over all images prior to despatch and a signed certificate of authenticity will be included. Should you require any special orders or framing please contact me via the contact me button in the header. Thank you.</p>
+                </div>
+
         <br>
             <a class="button" href="<?php echo url_for('gallery.php'); ?>">back to gallery</a>
         </div> 
 
-        <div class="product__disc-section">
-            <br>
-            <?php echo"<p class='text-base text-spacing-tight color-contrast1'>" . $rows['page_desc'] . "</p>"; ?> 
-        </div>  
-    </div>
+       
+        </div>
 
     
-</div>
+    </div>
 
 <div style="height:100px;"></div>
 

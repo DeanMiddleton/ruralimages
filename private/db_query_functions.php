@@ -72,7 +72,7 @@
   function all_blogs() {
     global $db;
 
-    $sql = "SELECT * FROM bloggs ";
+    $sql = "SELECT * FROM bloggs ORDER BY ref DESC ";
     $result = mysqli_query($db,$sql);
     return $result;
   }  
