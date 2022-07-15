@@ -2,7 +2,7 @@
 
 .header {
     display: block;
-    top: 65px;
+    top: 0px;
     z-index: 10;
     width: 100%;
     background-color: white; /* possible custom */
@@ -175,7 +175,7 @@
   }
   
   .head__main-link-btn:hover {color: var(--colorDecoRed);}
-  .top-margin {height: 140px;}
+  .top-margin {height: 75px;}
 
   /* Medium Devices */
 @media only screen and (max-width: 1024px) {

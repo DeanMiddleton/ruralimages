@@ -41,7 +41,7 @@ if($_SESSION['cust-logged-in'] == 1){
 <!-- scripting -->
 <script>
 // promo on="block"/off="none"
-ID("promo-element").style.display = "block";
+ID("promo-element").style.display = "none";
 
 </script>
 

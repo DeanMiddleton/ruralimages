@@ -31,7 +31,7 @@
 <!-- scripting -->
 <script>
 // promo on="block"/off="none"
-ID("promo-element").style.display = "block";
+ID("promo-element").style.display = "none";
 
 
 

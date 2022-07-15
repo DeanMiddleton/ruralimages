@@ -32,7 +32,7 @@ if ($_SESSION['cust-logged-in'] !== 1) {header('Location: login.php');}
 
 <script>
 // promo on="block"/off="none"
-ID("promo-element").style.display = "block";
+ID("promo-element").style.display = "none";
 
 
 </script> 

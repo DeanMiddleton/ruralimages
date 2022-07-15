@@ -33,7 +33,7 @@ if ($_SESSION['admin-email'] == 1) {header('Location: admin-dash.php');} // chec
 
 <script>
 // promo on="block"/off="none"
-ID("promo-element").style.display = "block";
+ID("promo-element").style.display = "none";
 
 
 </script> 
