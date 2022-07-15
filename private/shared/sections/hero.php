@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="<?php echo url_for('style/stylesheets/hero.css'); ?>">
 </head>
 <body>
-
+<div class="container">
 <!-- hero area -->
 <?php $hero_pics = [13,29,35,33,23]; ?>
 
@@ -36,7 +36,7 @@
 
 
 </div>
-
+</div>
 <!-- INTRO -->
 <section>
     <div class="container">

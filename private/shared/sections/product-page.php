@@ -16,13 +16,14 @@
         <div class="product__label-outer">
             <div class="product__info-section">
                 <?php echo "<h1 class='text-4xl text-normal text-spacing-tighter' style='color:var(--colorDecoRed)'>" . $rows["title"] . "</h1>";?><br>
+                <?php echo"<p class='text-lg text-spacing-tight text-color-grey'>" . $rows['meta_desc'] . "</p><br>"; ?> 
                 <?php echo"<p class='text-lg text-spacing-tight text-color-grey'>" . $rows['page_desc'] . "</p><br>"; ?> 
 
                 <div class="con">
 
                     <!-- <?php $product_type = all_products(); // dont use anymore ?>  -->
 
-                        <p class="text-base text-spacing-tight">Choose which size you require.</p>
+                        <p class="text-base text-spacing-tight">Choose which option you require.</p>
                 
                         <form action="<?php echo url_for('gallery.php'); ?>" method="POST">     
                             <?php 
@@ -54,26 +55,29 @@
         </div> 
 
        
-        </div>
+    </div>
 
     
-    </div>
-
-<div style="height:100px;"></div>
-
-<div class="main-con">
-    <div class="col-100 bg-white" style="overflow:hidden; min-height:700px;">
-        <div class="view-outer">
-            <img class="view-outer__background-wide" src="<?php echo url_for('style/assets/backgrounds/wood-panel.jpg'); ?>" alt="">
-            <div class="view-outer__pic-onwall">
-                <?php echo "<img class='image" . $rows['orientation'] . "' src='" . $rows["thumbnail"] . "' alt='" . $rows["alt_tag"] . "'  onload='fadeIn();'>" ?>
-            </div>
-            <div class="view-outer__blue-chair">
-                <img src="<?php echo url_for('style/assets/backgrounds/sofa-blue.png'); ?>"  onload="fadeIn();" alt="">
-            </div>
-        </div> 
-    </div>
 </div>
+
+        <div style="height:100px;"></div>
+
+        <div class="container">
+            <div class="col-100 bg-white" style="overflow:hidden; min-height:700px;">
+                <div class="view-outer">
+                    <img class="view-outer__background-wide" src="<?php echo url_for('style/assets/backgrounds/wood-panel.jpg'); ?>" alt="">
+                    <div class="view-outer__pic-onwall">
+                        <?php echo "<img class='image" . $rows['orientation'] . "' src='" . $rows["thumbnail"] . "' alt='" . $rows["alt_tag"] . "'  onload='fadeIn();'>" ?>
+                    </div>
+                    <div class="view-outer__blue-chair">
+                        <img src="<?php echo url_for('style/assets/backgrounds/sofa-blue.png'); ?>"  onload="fadeIn();" alt="">
+                    </div>
+                    <p class="mockup-message">*The scales is not accurate size, but just to give you an idea.</p>
+                </div> 
+            </div>
+        </div>
+
+
 
 </body>
 </html>

@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6, p, span, a {
     width: 100%;
     height: auto;
     margin: 0px auto;
-    max-width: 1536px;
+    max-width: var(--mainWidth);
 }
 
 .text-box {
@@ -167,7 +167,7 @@ h1, h2, h3, h4, h5, h6, p, span, a {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 500px;
+  height: 400px;
   margin: 0px auto;
   border: 1px black solid;
  
@@ -177,10 +177,11 @@ h1, h2, h3, h4, h5, h6, p, span, a {
   display: block;
   opacity: 0.9;
   position: fixed;
-  width: 1536px;
+  width: var(--mainWidth);
   /* max-width: 1536px; */
   z-index: -1;
-  top: 0px;
+  height: 850px;
+  top: 78px;
   left: 50%;
   transform: translateX(-50%);
 }

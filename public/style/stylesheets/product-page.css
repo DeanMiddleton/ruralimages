@@ -15,8 +15,8 @@
   .product__label-outer {
       display: block;
       position: relative;
-      margin: 10px auto;
-      padding: 10px;
+      margin: 0px auto;
+      /* padding: 10px; */
       width: 100%;
       max-width: 1550px;
       height: auto;
@@ -28,7 +28,7 @@
       display: block; 
       width: 100%;
       margin: 0 auto;
-      padding: 10px 20px;
+      padding: 20px 20px;
       max-width: 1550px;
   }
 
@@ -59,7 +59,7 @@
       /* border: 1px solid grey; */
       width: 100%; 
       height: auto;
-      border-radius: 2px; 
+      border-radius: 5px; 
   }
 
   .order-form {
@@ -118,6 +118,7 @@
     width: 100%;
     max-width: 350px;
     height: auto;
+    
     left: 50%;
     transform: translateX(-50%);
     padding: 5px 10px;
@@ -127,7 +128,7 @@
     box-shadow: 0 10px 20px rgb(99, 99, 99);
   }
 
-  .view-outer__pic-onwall {bottom: 50%;}
+  .view-outer__pic-onwall {bottom: 45%;}
   .view-outer__pic-onwall--index {bottom: 50%;}
 
   .view-outer__pic-onwall > img, .view-outer__pic-onwall--index > img {
@@ -140,7 +141,7 @@
     position: absolute;
     width: 700px;
     height: 425px;
-    bottom: 150px;
+    bottom: 180px;
     left: 10px;
     padding: 20px;  
   }
@@ -149,6 +150,15 @@
     width: 100%;
     height: auto;
   } 
+
+  .mockup-message {
+    position: absolute;
+    right: 12px;
+    bottom: 110px;
+    font-size: 10px;
+    letter-spacing: -1px;
+    color: black;
+  }
 
   /* Medium Devices */
   @media only screen and (max-width: 1199px) {
