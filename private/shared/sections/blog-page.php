@@ -20,7 +20,7 @@
 
         <div class="container">
             <div class="blog-outer">
-                <a href="<?php echo url_for('blog.php?id=' . h(u($row["ref"]))); ?>" class="col-60-40">
+                <a href="<?php echo url_for('blog.php?title=' . h(u($row["title"]))); ?>" class="col-60-40">
                     <div class="image-con-SW">
                         <img class="pic" src="<?php echo url_for($row['image'] ); ?>" alt="">
                     </div> 

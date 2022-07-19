@@ -1,8 +1,8 @@
 <?php 
 require_once '../private/initialise.php';
 
-$blognumber = $_GET['id'];
-$blog_type = blog_by_ref($blognumber);
+$blognumber = $_GET['title'];
+$blog_type = blog_by_title($blognumber);
 ?>
 
 <!DOCTYPE html>

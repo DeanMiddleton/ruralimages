@@ -1,4 +1,4 @@
-<?php $rows = image_by_id($pagenumber); ?>
+<?php $rows = image_by_title($pagenumber); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

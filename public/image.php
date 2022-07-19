@@ -1,8 +1,8 @@
 <?php
 require_once '../private/initialise.php';
 
-$pagenumber = $_GET['id'];
-$meta = image_by_id($pagenumber);
+$pagenumber = $_GET['title'];
+$meta = image_by_title($pagenumber);
 ?>
 
 <!DOCTYPE html>
