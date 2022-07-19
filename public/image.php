@@ -13,7 +13,7 @@ $meta = image_by_id($pagenumber);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Dean Middleton">
     <meta name="keywords" content="">
-    <meta name="description" content="<?php echo $meta['meta_desc']; ?>">
+    <meta name="description" content="<?php echo $meta['meta_desc'] . " at Rural Images Photography - ruralimages.co.uk"; ?>">
     <link rel="stylesheet" href="<?php echo url_for('style/stylesheets/global.css'); ?>">
     <link rel="icon" href="<?php echo url_for('style/assets/logos/DM_Icon.ico'); ?>" type="image/x-icon">
     <title><?php echo $meta['meta_title']; ?></title>

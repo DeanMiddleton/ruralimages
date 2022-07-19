@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    div id="promo-element">
+    <div id="promo-element">
         <?php include(SHARED_PATH . '/sections/promo.php'); ?> <!--welcome section -->    
     </div>
 
