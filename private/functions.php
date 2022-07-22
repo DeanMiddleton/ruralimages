@@ -43,7 +43,7 @@ function url_for($script_path) {
     $headers .= "MIME-Version: 1.0\n";
     $headers .= "Content-type: text/html; charset=iso-8859-1\n";
     if( mail($to, $subject, $message, $headers) ){
-      echo "<h4 class='text-xl text-center font-normal text-spacing-tight text-color-main'>Your order and payment has been successful!</h4><br><p class='text-xl text-center font-normal text-spacing-tight text-color-main'>Currently DOMAIN ASSET MANAGEMENT will appear on your receipt, this is the old company name and we are still awaiting on Paypal to get it changed, Thank you for your patience.</p>";
+      echo "<h4 class='text-xl text-center font-normal text-spacing-tight text-color-main'>Your order and payment has been successful!</h4><br>";
     } else {
       echo "The server failed to send the message. Please try again later.";
     }

@@ -21,11 +21,9 @@
   
     --colorDecoNeutral: rgb(235, 243, 242);
     --colorDecoRed: rgb(150, 16, 29);
-    
-
     --fontMain: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --fontSize: 16px;
-    --mainWidth: 1200px; /* delete after conpleted */
+    --mainWidth: 1360px; /* delete after conpleted */
 }
 
 html, body {
@@ -37,8 +35,7 @@ html, body {
     font-size: var(--fontSize);
     line-height: 24px; 
     color: black;
-    position: static;
-   
+    position: static; 
 }
 
 /* resetting all text elements to the same */
@@ -112,6 +109,7 @@ h1, h2, h3, h4, h5, h6, p, span, a {
     height: auto;
     margin: 0px auto;
     max-width: var(--mainWidth);
+    padding: 0 10px;
 }
 
 .text-box {
@@ -137,20 +135,19 @@ h1, h2, h3, h4, h5, h6, p, span, a {
   width: 100%;
   max-width: 350px;
   height: 243px;
-  border: 1px rgb(199, 199, 199) solid;
+  border: 1px rgba(199, 199, 199,0.0) solid;
   border-radius: 5px;
-  transition: 0.5s;
-  filter:sepia(0%);
+  transition: 1s;
+  
 }
 
 .third-link:hover {
-  border: 1px rgb(119, 0, 0) solid;
-  filter:sepia(40%);
+  border: 1px grey solid;  
 }
 
 .third-link > img {
   width: auto;
-  max-width: 350px;
+  max-width: 351px;
   height: 100%;
 }
 
@@ -169,7 +166,8 @@ h1, h2, h3, h4, h5, h6, p, span, a {
   width: 100%;
   height: 400px;
   margin: 0px auto;
-  border: 1px black solid;
+  border-radius: 10px;
+  /* border: 1px black solid; */
  
 }
 
@@ -220,7 +218,7 @@ h1, h2, h3, h4, h5, h6, p, span, a {
 }
 
 .button {
-  border: 1px aqua solid;
+  border: 1px rgb(99, 255, 255) solid;
   border-radius: 50px;
   padding: 4px 20px 5px;
   color: white;
@@ -233,7 +231,8 @@ h1, h2, h3, h4, h5, h6, p, span, a {
 
 .button:hover {
   background-color: white;
-  color: aqua;
+  color: black;
+  border: 1px white solid;
 }
 
 .blog-outer {

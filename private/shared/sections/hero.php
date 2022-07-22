@@ -6,40 +6,40 @@
     <link rel="stylesheet" href="<?php echo url_for('style/stylesheets/hero.css'); ?>">
 </head>
 <body>
-<div class="container">
+<div class="container" style="background-color: white;">
 <!-- hero area -->
 <?php $hero_pics = [13,29,35,33,23]; ?>
 
-<div class="hero">
+    <div class="hero">
 
-    <div class="hero-outer">
+        <div class="hero-outer">
 
-        <?php for($x=0; $x<5; $x++){
+            <?php for($x=0; $x<5; $x++){
 
-            $image = image_by_id($hero_pics[$x]);
+                $image = image_by_id($hero_pics[$x]);
 
-            echo "<a id='pic" . $x . "' class='hero-pic-outer' href='". url_for('image.php?id=' . h(u($image['ref']))). "'>";?>
+                echo "<a id='pic" . $x . "' class='hero-pic-outer' href='". url_for('image.php?title=' . h(u($image['title']))). "'>";?>
+            
+                <img class='hero-pic' src='<?php echo url_for($image["full_size"]);?>' alt='<?php echo url_for($image["alt_tag"]); ?>'>
+                
+                </a>
+                
+            <?php } ?>
+
+        </div>
         
-            <img class='hero-pic' src='<?php echo url_for($image["full_size"]);?>' alt='<?php echo url_for($image["alt_tag"]); ?>'>
-            
-            </a>
-            
-        <?php } ?>
+        <div class="headline-outer">
+            <h1 class="headline text-6xl text-spacing-tighter text-upper font-bold">Beautiful moody images</h1>
+            <h2 class="headline text-4xl text-spacing-tighter font-normal text-italic color-grey">created by mother nature.</h2><br>
+            <a class="button text-xl text-center font-normal" href="<?php echo url_for('gallery.php'); ?>">gallery ></a>
+        </div>
+
 
     </div>
-    
-    <div class="headline-outer">
-        <h1 class="headline text-6xl text-spacing-tighter text-upper font-bold">Beautiful moody images</h1>
-        <h2 class="headline text-4xl text-spacing-tighter font-normal text-italic color-grey">created by mother nature.</h2><br>
-        <a class="button text-xl text-center font-normal" href="<?php echo url_for('gallery.php'); ?>">gallery ></a>
-    </div>
-
-
-</div>
 </div>
 <!-- INTRO -->
 <section>
-    <div class="container">
+    <div class="container" style="background-color: white;">
         <div class="text-box">
             <h2 class="text-4xl text-center text-upper font-semibold text-spacing-tighter">Rural Images Landscape Photography</h2><br>
             <p class="text-lg text-center text-spacing-tight font-normal color-grey">I am a passionate self taught photographer that strives to reproduce the marvel that our green and pleasant land has to offer. I hope you enjoy my images as much as I do and if you see any you like they are available in open and limited edition prints.</p>
@@ -47,8 +47,8 @@
     </div>
 </section>
     
-<div class="container">
-    <div class="container-3"  style="background-color:white;">
+<div class="container" style="background-color:white;">
+    <div class="container-3">
 
         <div class="link-desc">
             <a class="third-link" href="<?php echo url_for('gallery.php'); ?>">

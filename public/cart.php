@@ -2,16 +2,22 @@
 
 $clearLogS="";
 $clearLogE="";
+$clearPayS="";
+$clearPayE="";
 
 if($_SESSION['cust-logged-in'] == 1){
 
     $clearLogS = "<div style='display:none;'> ";
     $clearLogE = "</div> ";
+    $clearPayS="";
+    $clearPayE="";
 
 }else{
 
     $clearLogS="";
     $clearLogE="";
+    $clearPayS="<div style='display:none;'> ";
+    $clearPayE="</div> ";
 }
 ?>
 

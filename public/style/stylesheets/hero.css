@@ -4,13 +4,16 @@
     overflow: hidden;
     width: 100%;
     height: 700px;
-    max-width: 1536px;
+    max-width: 1350px;
     margin: 0 auto;
+    padding: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgb(199, 199, 199);
 }
 
 .hero-outer {
     display: grid;
-    grid-template-columns: repeat(5, 1550px);
+    grid-template-columns: repeat(5, 1350px);
     position: absolute;
     left: 0px;
     height: 700px;
@@ -18,23 +21,24 @@
 }
 
 .hero-pic {
+    position: absolute;
     margin: auto;
     width: auto;
-  
-    height: 1077px;   
+    height: 1077px;
+   
 }
 
 @keyframes slider {
    0% {left:0px}
    18% {left:0px}
-   20% {left:-1551px}
-   38% {left:-1551px}
-   40% {left:-3101px}
-   58% {left:-3101px}
-   60% {left:-4651px}
-   78% {left:-4651px}
-   80% {left:-6201px}
-   98% {left:-6201px}
+   20% {left:-1351px}
+   38% {left:-1351px}
+   40% {left:-2701px}
+   58% {left:-2701px}
+   60% {left:-4051px}
+   78% {left:-4051px}
+   80% {left:-5401px}
+   98% {left:-5401px}
    100% {left:0px} 
 }
 

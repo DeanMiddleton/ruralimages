@@ -6,7 +6,7 @@
     z-index: 10;
     width: 100%;
     background-color: white; /* possible custom */
-    border-bottom: 1px solid rgb(199, 199, 199); /* possible custom */
+    box-shadow: 0 10px 50px rgb(199, 199, 199);
     margin: 0 auto;
     padding: 10px;
   }
@@ -175,7 +175,10 @@
   }
   
   .head__main-link-btn:hover {color: var(--colorDecoRed);}
-  .top-margin {height: 75px;}
+  .top-margin {
+    height: 90px;
+    background-color: white;
+  }
 
   /* Medium Devices */
 @media only screen and (max-width: 1024px) {
