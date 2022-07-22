@@ -80,7 +80,7 @@
   function all_events() {
     global $db;
 
-    $sql = "SELECT * FROM events; ";
+    $sql = "SELECT * FROM events ORDER BY date; ";
     $result = mysqli_query($db,$sql);
     return $result;
   }  
@@ -202,12 +202,12 @@ function delete_customer($name) {
   }
 }
 
-function add_blog ($title, $meta_title, $content, $visible, $image, $file_path ) {
+function add_blog ($title, $meta_title, $content, $visible, $image ) {
   global $db;
 
   $sql = "INSERT INTO bloggs ( ";
-  $sql .="title, meta_title, content, visible, image, path) VALUES ( ";
-  $sql .="'$title','$meta_title','$content','$visible','$image','$file_path')";
+  $sql .="title, meta_title, content, visible, image) VALUES ( ";
+  $sql .="'$title','$meta_title','$content','$visible','$image')";
   mysqli_query($db,$sql);
 }
 

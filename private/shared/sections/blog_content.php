@@ -18,7 +18,7 @@
         <img class="blog-image" src="<?php echo $blog_type['image']; ?>" alt="<?php echo $blog_type['title']; ?>" onload="fadeIn();">
     </div>
 
-    <div class="col-100">
+    <div class="col-100" style="max-width:1000px;">
         <p class="text-lg text-spacing-tight"><?php echo $blog_type['content'] ?></p>   
     </div>
         

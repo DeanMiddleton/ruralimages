@@ -43,7 +43,7 @@ function url_for($script_path) {
     $headers .= "MIME-Version: 1.0\n";
     $headers .= "Content-type: text/html; charset=iso-8859-1\n";
     if( mail($to, $subject, $message, $headers) ){
-      echo "<h4 class='text-xl text-center font-normal text-spacing-tight text-color-main'>Your order and payment has been successful!</h4><br>";
+      echo "<h4 class='text-2xl text-center font-semibold text-spacing-tight'>Your order and payment has been successful!</h4><br>";
     } else {
       echo "The server failed to send the message. Please try again later.";
     }

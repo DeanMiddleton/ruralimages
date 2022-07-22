@@ -18,6 +18,8 @@
         $event_result = all_events();
         while($row = mysqli_fetch_assoc($event_result)) {
             if($row['visible'] ==1){ 
+
+            $date = date('d-m-Y', strtotime($row['date'])); //date format
 ?>
         <div class="container">
             <div class="blog-outer">
@@ -28,7 +30,7 @@
 
                     <div class="txt-con">
                         <h1 class="text-2xl font-normal text-left text-spacing-tighter text-color-black"><?php echo $row['title']; ?></h1>
-                        <h2 class="text-xl font-normal text-left text-spacing-tighter  text-color-black">Held at <?php echo $row['location']; ?> on <?php echo $row['date']; ?></h2><br>
+                        <h2 class="text-xl font-normal text-left text-spacing-tighter  text-color-black">Held at <?php echo $row['location']; ?> on <?php echo $date; ?></h2><br>
                         <p class="text-xl font-light text-left text-spacing-tight  text-color-grey"><?php echo $row['content']; ?></p>
                     </div> 
 

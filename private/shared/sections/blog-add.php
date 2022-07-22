@@ -47,7 +47,7 @@
         $visible = $_POST['blog-visible'];
         $image = $_POST['blog-image'];
 
-        add_blog($title, $meta_title, $content, $visible, $image, $file_path ); // add blog         
+        add_blog($title, $meta_title, $content, $visible, $image); // add blog         
     }
 ?>
 

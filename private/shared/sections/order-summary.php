@@ -14,7 +14,7 @@
 <div class="container" style="min-height:500px;">    
 
 
-    <?php echo "<p class='text-base font-semibold text-center text-spacing-tight text-color-black edit-title'>Your order reference " . $_SESSION['order_ref'] . " is being processed and is summerised below.</p>"; ?>
+    <?php echo "<p class='text-lg font-semibold text-center text-spacing-tight text-color-black edit-title'>Your order reference " . $_SESSION['order_ref'] . " is being processed and is summarised below.</p>"; ?>
 
         <div class="order-table">
             <p class="text-base text-upper text-center font-bold">Image Title</p><p class="text-base text-upper text-center font-bold">Type</p><p class="text-base text-upper text-center font-bold">Cost</p><p class="text-base text-upper text-center font-bold">(x)</p><p class="text-base text-upper text-center font-bold">Total</p>
@@ -29,7 +29,7 @@
                     if($sum_total==1 || $sum_total>100) {$delivery = 0;} else {$delivery = $postPacking;}
                     $grandTotal = $sum_total + $delivery;
 
-                    echo "<p class='text-sm font-normal text-left text-spacing-tight text-color-black edit-title'>" . $orderline['image'] . "</p><p class='text-sm font-normal text-left text-spacing-tight text-color-black edit-title'>" . $orderline['size'] . "</p><p class='text-sm font-normal text-center text-spacing-tight text-color-black edit-title'>£" . $orderline['cost'] . "</p><p class='text-sm font-normal text-center text-spacing-tight text-color-black edit-title'>" . $orderline['quantity'] . "</p><p class='text-sm font-normal text-center text-spacing-tight text-color-black edit-title'>£" . $orderline['cost'] * $orderline['quantity'] . "</p>";
+                    echo "<p class='text-sm font-normal text-center text-spacing-tight text-color-black edit-title'>" . $orderline['image'] . "</p><p class='text-sm font-normal text-center text-spacing-tight text-color-black edit-title'>" . $orderline['size'] . "</p><p class='text-sm font-normal text-center text-spacing-tight text-color-black edit-title'>£" . $orderline['cost'] . "</p><p class='text-sm font-normal text-center text-spacing-tight text-color-black edit-title'>" . $orderline['quantity'] . "</p><p class='text-sm font-normal text-center text-spacing-tight text-color-black edit-title'>£" . $orderline['cost'] * $orderline['quantity'] . "</p>";
                     
                     $image["$counter"] = $orderline['image'];
                     $type["$counter"] = $orderline['size'];
@@ -42,9 +42,9 @@
         </div>
 
         <div class="order-totals">
-            <?php echo "<p></p><p></p><p></p><p class='text-sm font-semibold text-center text-spacing-tight text-color-black edit-title'>Sub total</p><p class='text-sm font-semibold text-center text-spacing-tight text-color-black edit-title'>£" . $sum_total . "</p>"; ?>
-            <?php echo "<p></p><p></p><p></p><p class='text-sm font-semibold text-center text-spacing-tight text-color-black edit-title'>Delivery</p><p class='text-sm font-semibold text-center text-spacing-tight text-color-black edit-title'>£" . $delivery . "</p>"; ?>
-            <?php echo "<p></p><p></p><p></p><p class='text-sm font-semibold text-center text-spacing-tight text-color-black edit-title'>Grand Total</p><p class='text-sm font-semibold text-center text-spacing-tight text-color-black edit-title'>£" . $grandTotal . "</p>"; ?>
+            <?php echo "<p></p><p></p><p></p><p class='text-sm font-semibold text-center text-spacing-tight text-color-black'>Sub total</p><p class='text-sm font-semibold text-center text-spacing-tight text-color-black'>£" . $sum_total . "</p>"; ?>
+            <?php echo "<p></p><p></p><p></p><p class='text-sm font-semibold text-center text-spacing-tight text-color-black'>Delivery</p><p class='text-sm font-semibold text-center text-spacing-tight text-color-black'>£" . $delivery . "</p>"; ?>
+            <?php echo "<p></p><p></p><p></p><p class='text-sm font-semibold text-center text-spacing-tight text-color-black'>Grand Total</p><p class='text-sm font-semibold text-center text-spacing-tight text-color-black'>£" . $grandTotal . "</p>"; ?>
         </div>
 
         <br>
