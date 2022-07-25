@@ -80,23 +80,20 @@
 
                   <!-- create customer acct or loggin button will disapear when loggin in -->
                   <?php echo $clearLogS; ?>
-                      <p class="text-sm text-center text-spacing-tight">You will need an account login to track you order and thus we can<br>inform you of progress. (This will not be used for marketing purposes.)<br>(Ensure you are happy with your order before proceeding, Thank You!</p><br>
+
                       <form  action="<?php echo url_for('create_cust.php'); ?>" method="POST">
-                          <input class="cart__go-shopping" type="submit" name="status" value="Login/Create Customer Account">
+                          <input class="cart__go-shopping" type="submit" name="status" value="Sign in / Create Customer">
+                      </form>    
+                     
+                      <form  action="<?php echo url_for('create_cust.php'); ?>" method="POST">
+                          <input class="cart__go-shopping" type="submit" name="status" value="Log as Guest Account">
                       </form>    
                   <?php echo $clearLogE; ?>
 
                   <?php echo $clearPayS; ?>
 
 
-                   <div class="cart__message">
-                        <h6 class="text-lg text-center text-upper font-semibold text-spacing-tight text-color-white">Before proceeding going to checkout!</h6>
-                        <p class="text-base text-center font-normal text-spacing-tight text-color-white">When in paypal you will still see the title 'DOMAIN ASSE'</p>
-                        <p class="text-base text-center font-normal text-spacing-tight text-color-white">This is the old name of the business now Dean Middleton Ltd</p>
-                        <p class="text-base text-center font-normal text-spacing-tight text-color-white">Paypal are taking a while changing this so if you have any concerns, please contact me or call me on 07826390999.<br>Thank you, Dean.
-                        </p>
-
-                    </div>
+                   
                   
                     <div id="smart-button-container">
                       <div style="text-align: center;">
@@ -184,9 +181,7 @@
 
            
 </div>
-            <a class="txt-detail txt-upper txt-center"  href="<?php echo url_for('summary.php');?>">
-                <img style='width:20px;' src="<?php echo url_for('style/assets/logos/summary.png'); ?>" alt="" onload="fadeIn();">
-            </a>
+            
 
 
 
@@ -198,11 +193,11 @@
 </html>
 
 
- <!-- <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p> -->
+ 
 
                     <!-- <div class="cart__message">
                         <h6 class="text-lg text-center text-upper font-semibold text-spacing-tight text-color-white">Before proceeding going to checkout!</h6>
-                        <p class="text-base text-center font-normal text-spacing-tight text-color-white">When in paypal you will still see the title 'DOMAIN ASSET MAINTAINMENT'</p>
+                        <p class="text-base text-center font-normal text-spacing-tight text-color-white">When in paypal you will still see the title 'DOMAIN ASSE'</p>
                         <p class="text-base text-center font-normal text-spacing-tight text-color-white">This is the old name of the business now Dean Middleton Ltd</p>
                         <p class="text-base text-center font-normal text-spacing-tight text-color-white">Paypal are taking a while changing this so if you have any concerns, please contact me or call me on 07826390999.<br>Thank you, Dean.
                         </p>

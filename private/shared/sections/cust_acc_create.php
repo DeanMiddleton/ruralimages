@@ -13,6 +13,14 @@
 <div class="container">
     
 <?php
+    if ($_POST["status"]=="Log as Guest Account") {
+        $form_title = "Guest Account";
+    } else {
+        $form_title = "Customer Account";
+    }
+
+
+
     // CUSTOMER FORM PROCESS
     if (isset($_POST["cust-name"])) {
 
@@ -94,12 +102,12 @@
     }?>
         <!-- create or log in form       -->
             <div class="cust-form-outer">
-                <p class="">Customer Form</p>
+                <p class="text-lg text-center text-spacing-tight font-semibold"><?php echo $form_title; ?></p>
 
                 <form action="<?php echo url_for('create_cust.php'); ?>" method="POST" class="cust-form" onsubmit="">
                     <p class="text-base text-left text-spacing-tight font-normal">Full Name </p><input class="text-sm text-left text-spacing-tight font-normal" id="custName" type="text" name="cust-name" placeholder="*Your name...." required>
                     <p class="text-base text-left text-spacing-tight font-normal">Email </p><input class="text-sm text-left text-spacing-tight font-normal" id="custEmail" type="text" name="cust-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" placeholder="*Your email...." required>
-                    <p class="text-base text-left text-spacing-tight font-normal">Password </p><input class="text-sm text-left text-spacing-tight font-normal" id="custPassword" type="text" name="cust-password" placeholder="*Password...." required><br>
+                    <p class="text-base text-left text-spacing-tight font-normal">Password </p><input class="text-sm text-left text-spacing-tight font-normal" id="custPassword" type="text" name="cust-password" placeholder="*Password...." required><br><br>
                     <input class="button" id="mybtn" type="submit" value="SUBMIT"> <p id="status"><?php echo $log_message; ?></p>
                 </form>
             </div>
