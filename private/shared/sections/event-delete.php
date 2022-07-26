@@ -40,7 +40,7 @@
 
         <div class="amend-form-outer">
 
-        <form action="<?php echo url_for('events/edit.php'); ?>" method="POST" class="amend-form" onsubmit="">
+        <form action="<?php echo url_for('events/delete.php'); ?>" method="POST" class="amend-form" onsubmit="">
                 
                 <p class="text-base text-normal text-left text-upper text-spacing-tight text-color-main edit-title">Event Title</p>
                 <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="event-title" type="text" name="event-title" value="<?php echo $event_picked['title']; ?>">

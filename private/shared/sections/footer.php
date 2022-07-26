@@ -32,8 +32,8 @@
                     <h6 class="text-base text-center text-spacing-tight">Follow me at the following</h6>
 
                     <div class="footer__social-inner">
-                        <a class="social-outer" href="#"><img class="footer__social-link" src="<?php echo url_for('style/assets/logos/facebook.png'); ?>" alt=""></a> 
-                        <a class="social-outer" href="#"><img class="footer__social-link" src="<?php echo url_for('style/assets/logos/instagram.png'); ?>" alt=""></a> 
+                        <a class="social-outer" href="https://www.facebook.com/Rural-Images-Landscape-Photography-104067285733564"><img class="footer__social-link" src="<?php echo url_for('style/assets/logos/facebook.png'); ?>" alt=""></a> 
+                        <a class="social-outer" href="https://www.instagram.com/ruralimagesphotography"><img class="footer__social-link" src="<?php echo url_for('style/assets/logos/instagram.png'); ?>" alt=""></a> 
                         <a class="social-outer" href="#"><img class="footer__social-link" src="<?php echo url_for('style/assets/logos/linkedin.png'); ?>" alt=""></a> 
                         <a class="social-outer" href="#"><img class="footer__social-link" src="<?php echo url_for('style/assets/logos/pinterest.png'); ?>" alt=""></a> 
                     </div>

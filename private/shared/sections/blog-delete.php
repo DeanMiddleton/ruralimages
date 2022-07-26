@@ -36,7 +36,7 @@
 
         <div class="amend-form-outer">
 
-            <form action="<?php echo url_for('blogs/edit.php'); ?>" method="POST" class="amend-form" onsubmit="">
+            <form action="<?php echo url_for('blogs/delete.php'); ?>" method="POST" class="amend-form" onsubmit="">
                 
                 <p class="text-base text-normal text-left text-upper text-spacing-tight text-color-main edit-title">Blog Title</p>
                 <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="blog-title" type="text" name="blog-title" value="<?php echo $blog_picked['title']; ?>">
