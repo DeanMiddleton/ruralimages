@@ -52,7 +52,7 @@
 
         <div class="link-desc">
             <a class="third-link" href="<?php echo url_for('gallery.php'); ?>">
-                <img src="<?php echo url_for('style/assets/thumbnails/britanna_views.jpg'); ?>"  onload="fadeIn();" alt="">
+                <img src="<?php echo url_for('style/assets/thumbnails/britannia_views.jpg'); ?>"  onload="fadeIn();" alt="">
                 <div class="headline-outer">
                     <h3 class="headline text-spacing-tight font-semibold text-upper text-3xl">Portfolio Gallery</h3>
                 </div>

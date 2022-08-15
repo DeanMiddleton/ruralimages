@@ -23,7 +23,9 @@
                     <p class="text-base text-spacing-tight">Sible Hedingham</p>
                     <p class="text-base text-spacing-tight">Essex</p>
                     <p class="text-base text-spacing-tight">CO9 3HS</p>
-                    <p class="text-base text-spacing-tight">United Kingdom</p>
+                    <a href="<?php echo url_for('summary.php');?>">
+                        <p class="text-base text-spacing-tight">United Kingdom</p>
+                    </a>
                 </div>
 
 
@@ -61,9 +63,7 @@
 
 
 
-            <a class="txt-detail txt-upper txt-center"  href="<?php echo url_for('summary.php');?>">
-                <img style='width:20px;' src="<?php echo url_for('style/assets/logos/summary.png'); ?>" alt="" onload="fadeIn();">
-            </a>
+            <!-- <a href="<?php echo url_for('summary.php');?>"></a> -->
                 
         </div>
            

@@ -47,6 +47,24 @@
                 <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="order-status" type="text" name="order-status" value="<?php echo $orders['status']; ?>">
                 <p class="text-base text-normal text-left text-upper text-spacing-tight text-color-main edit-title">Delivery Charged</p>
                 <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="order-del-chg" type="text" name="order-del-chg" value="<?php echo $orders['delivery_chg']; ?>">
+                <br>
+                <p class="text-base text-normal text-left text-upper text-spacing-tight text-color-black edit-title">Order Lines</p>
+                <?php
+                
+                $orderLine = order_line_by_id($orders['order_ref']);
+                // order summary
+                
+                $counter = 0;
+
+                foreach ($orderLine as $orderline) {
+                    
+                    $counter = $counter + 1;
+
+                    echo "<p class='text-lg font-normal text-center text-spacing-tight text-color-black'>(" . $counter . ") " . $orderline['image'] . ", " . $orderline['type'] . " at £" . $orderline['price'] . " x " . $orderline['quantity'] . " = £" . $orderline['price'] * $orderline['quantity'] . "</p>";
+                    
+                  
+                };
+?>
 
 
                 <div class="grid grid-2">

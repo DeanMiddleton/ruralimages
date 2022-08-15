@@ -6,15 +6,19 @@
 </head>
 <body>
     
-    <div class="gallery-cat-outer">
-        <form class="gallery-cat-btns" action="<?php echo url_for('gallery.php'); ?>" method="post">
-            <button class="cat-btn" name="category" value="all">all</button>
-            <button class="cat-btn" name="category" value="seascape">sea</button>
-            <button class="cat-btn" name="category" value="abstract">abstract</button>
-            <button class="cat-btn" name="category" value="rural">rural</button>
-            <button class="cat-btn" name="category" value="moody">moody</button>
-            <button class="cat-btn" name="category" value="bw">B / W</button>
-        </form>
+    <div class="container">
+
+        <div class="gallery-cat-outer">
+            <form class="gallery-cat-btns" action="<?php echo url_for('gallery.php'); ?>" method="post">
+                <button class="cat-btn" name="category" value="all">all</button>
+                <button class="cat-btn" name="category" value="seascape">seascape images</button>
+                <button class="cat-btn" name="category" value="fun">fun images</button>
+                <button class="cat-btn" name="category" value="rural">rural images</button>
+                <button class="cat-btn" name="category" value="moody">moody images</button>
+                <button class="cat-btn" name="category" value="bw">Black & White Images</button>
+            </form>
+        </div>
+
     </div>
 
     <div class="container">
@@ -45,7 +49,7 @@
                 <?php echo"<img class='thumb " .$row['orientation'] . "' src='" . $row["thumbnail"] . "' alt='" . $row["alt_tag"] . "'  onload='fadeIn();''>"; ?>
             </a>
 
-            <a class="thumb-title-surround" href="<?php echo url_for('image.php?id=' . h(u($row["ref"]))); ?>">
+            <a class="thumb-title-surround" href="<?php echo url_for('image.php?title=' . h(u($row["title"]))); ?>">
                 <?php echo"<div class='thumb-title text-base text-upper text-center text-spacing-tight'>" . $row['title'] . "</div>"; ?>
             </a>
         </div>

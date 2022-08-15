@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: repeat(4, auto);
     width: 100%;
-    max-width: 1360px;
+    /* max-width: 1360px; */
     gap: 10px;
     margin: 30px auto;
     padding: 0 10px;
@@ -19,34 +19,34 @@
 
   .gallery-cat-btns {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    margin: 5px auto;
-    width: 700px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5px 10px;
+    /* width: 700px; */
   }
 
   .cat-btn {
     display: inline-block;
-    margin: 10px auto 0;
-    padding: 3px 10px 2px;
-    width: 100px;
-    color: var(--colorDecoRed);
-    font-size: 16px;
+    margin: 8px auto;
+    padding: 3px 5px 2px;
+    width: 90%;
+    min-width: 150px;
+    height: 100px;
+    color: white;
+    font-size: 18px;
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: -1px;
-    border-left: 2px solid var(--colorDecoRed);
-    border-right: 2px solid var(--colorDecoRed);
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-    background-color: white;
-    border-radius: 5px;
+    letter-spacing: 0px;
+    border: 1px solid rgba(100, 0, 0, 0.0);
+    background-color: rgb(100, 0, 0);
+    border-radius: 7px;
     transition: 0.5s;
   }
 
   .cat-btn:hover {
-    border-top: 2px solid var(--colorDecoRed);
-    border-bottom: 2px solid var(--colorDecoRed);
+    border: 1px solid rgba(100, 0, 0, 1.0);
+    background-color: white;
+    color: black;
   }
 
   .thumb-container {
@@ -71,8 +71,8 @@
     height: 290px;
     width: 300px;
     padding-bottom: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     margin: 0 auto;
@@ -121,10 +121,24 @@
     transition: 0.5s;
   }
   
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
 
   .gallery-outer {grid-template-columns: repeat(3, auto);}
-}    
+
+  
+} 
+
+@media only screen and (max-width: 1200px) {
+
+ 
+  .gallery-cat-btns {
+   
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5px auto;
+    width: auto;
+  }
+
+}
 
 /* Small Devices */
 @media only screen and (max-width: 950px) {
@@ -136,7 +150,7 @@
 @media only screen and (max-width: 640px) {
   .gallery-cat-btns {
    
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin: 5px auto;
     width: auto;
   }

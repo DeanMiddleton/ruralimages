@@ -78,7 +78,9 @@
                     <br><br>
                         <input id="orderBtn" class="button" type="submit" value="Add to cart">
                 </form>
-                    
+                <br>
+                <p class="text-lg text-spacing-tight">Any questions or special requests just contact me.</p><br>
+                <a class="button" href="<?php echo url_for('contact.php'); ?>">contact me</a>
         </div>
 
 </body>

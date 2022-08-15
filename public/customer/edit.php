@@ -17,9 +17,7 @@
 
 <?php include(SHARED_PATH . '/sections/header.php'); ?>
 
-    <div id="promo-element">
-        <?php include(SHARED_PATH . '/sections/promo.php'); ?> <!--welcome section -->    
-    </div>
+   
 
     
 <div id="loader">
