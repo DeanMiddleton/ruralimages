@@ -72,19 +72,19 @@
                     <p class="text-base text-normal text-left text-upper text-spacing-tight text-color-main edit-title">Product 1 Description</p>
                     <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="prod1-desc" type="text" name="prod1-desc" value="<?php echo $image_picked['prod1_desc']; ?>">
                     <p class="text-base text-normal text-left text-upper text-spacing-tight text-color-main edit-title">Product 1 Price</p>
-                    <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="prod1-price" type="number" name="prod1-price"  value="<?php echo $image_picked['prod1_price']; ?>">
+                    <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="prod1-price" step="0.01" type="number" name="prod1-price"  value="<?php echo $image_picked['prod1_price']; ?>">
                     <p class="text-base text-normal text-left text-upper text-spacing-tight text-color-main edit-title">Product 2 Description</p>
                     <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="prod2-desc" type="text" name="prod2-desc"  value="<?php echo $image_picked['prod2_desc']; ?>">
                     <p class="text-base text-normal text-left text-upper text-spacing-tight text-color-main edit-title">Product 2 Price</p>
-                    <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="prod2-price" type="number" name="prod2-price"  value="<?php echo $image_picked['prod2_price']; ?>">
+                    <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="prod2-price" step="0.01" type="number" name="prod2-price"  value="<?php echo $image_picked['prod2_price']; ?>">
                     <p class="text-base text-normal text-left text-upper text-spacing-tight text-color-main edit-title">Product 3 Description</p>
                     <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="prod3-desc" type="text" name="prod3-desc"  value="<?php echo $image_picked['prod3_desc']; ?>">
                     <p class="text-base text-normal text-left text-upper text-spacing-tight text-color-main edit-title">Product 3 Price</p>
-                    <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="prod3-price" type="number" name="prod3-price"  value="<?php echo $image_picked['prod3_price']; ?>">
+                    <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="prod3-price" step="0.01" type="number" name="prod3-price"  value="<?php echo $image_picked['prod3_price']; ?>">
                     <p class="text-base text-normal text-left text-upper text-spacing-tight text-color-main edit-title">Product 4 Description</p>
                     <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="prod4-desc" type="text" name="prod4-desc"  value="<?php echo $image_picked['prod4_desc']; ?>">
                     <p class="text-base text-normal text-left text-upper text-spacing-tight text-color-main edit-title">Product 4 Price</p>
-                    <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="prod4-price" type="number" name="prod4-price"  value="<?php echo $image_picked['prod4_price']; ?>">
+                    <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="prod4-price" step="0.01" type="number" name="prod4-price"  value="<?php echo $image_picked['prod4_price']; ?>">
                 </div>
             </div>
 

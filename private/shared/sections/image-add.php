@@ -21,13 +21,13 @@
             <p class="text-base text-normal text-left text-upper text-spacing-tight text-color-main edit-title">Image Title</p>
             <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="image-title" type="text" name="image-title" placeholder="*Image Title...." required>
             <p class="text-base text-normal text-left text-upper text-spacing-tight text-color-main edit-title">Meta Title for SEO</p>
-            <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="image-meta-title" type="text" name="image-meta-title" placeholder="*Image Meta Title...." required>
+            <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="image-meta-title" type="text" name="image-meta-title" placeholder="*Image Meta Title....">
             <p class="text-base text-normal text-left text-upper text-spacing-tight text-color-main edit-title">Alt Tag for SEO</p>
-            <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="image-alt-tag" type="text" name="image-alt-tag" placeholder="*Image Alt Tag...." required>
+            <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="image-alt-tag" type="text" name="image-alt-tag" placeholder="*Image Alt Tag....">
             <p class="text-base text-normal text-left text-upper text-spacing-tight text-color-main edit-title">Full Meta Description of SEO</p>
-            <textarea class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="image-meta-desc" name="image-meta-desc" placeholder="*Write your Image Meta Description here.." rows="3" required></textarea>
+            <textarea class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="image-meta-desc" name="image-meta-desc" placeholder="*Write your Image Meta Description here.." rows="3"></textarea>
             <p class="text-base text-normal text-left text-upper text-spacing-tight text-color-main edit-title">Full Page Description</p>
-            <textarea class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="image-page-desc" name="image-page-desc" placeholder="*Write your Image Page Description here.." rows="20" required></textarea>
+            <textarea class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="image-page-desc" name="image-page-desc" placeholder="*Write your Image Page Description here.." rows="20"></textarea>
         
         <div class="grid grid-2">
             <div class="amend-form">
@@ -44,21 +44,21 @@
             </div>
             <div class="amend-form">
                 <p class="text-base text-normal text-left text-upper text-spacing-tight text-color-main edit-title">Product 1 Description</p>
-                <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="prod1-desc" type="text" name="prod1-desc" placeholder="*Product 1 Description..." required>
+                <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="prod1-desc" type="text" name="prod1-desc" placeholder="*Product 1 Description...">
                 <p class="text-base text-normal text-left text-upper text-spacing-tight text-color-main edit-title">Product 1 Price</p>
-                <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="prod1-price" type="number" name="prod1-price" placeholder="*Product 1 Price (eg 12.23) ..." required>
+                <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="prod1-price" step="0.01" type="number" name="prod1-price" placeholder="*Product 1 Price (eg 12.23) ...">
                 <p class="text-base text-normal text-left text-upper text-spacing-tight text-color-main edit-title">Product 2 Description</p>
                 <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="prod2-desc" type="text" name="prod2-desc" placeholder="*Product 2 Description...">
                 <p class="text-base text-normal text-left text-upper text-spacing-tight text-color-main edit-title">Product 2 Price</p>
-                <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="prod2-price" type="number" name="prod2-price" placeholder="*Product 2 Price (eg 12.23) ...">
+                <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="prod2-price" step="0.01" type="number" name="prod2-price" placeholder="*Product 2 Price (eg 12.23) ...">
                 <p class="text-base text-normal text-left text-upper text-spacing-tight text-color-main edit-title">Product 3 Description</p>
                 <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="prod3-desc" type="text" name="prod3-desc" placeholder="*Product 3 Description...">
                 <p class="text-base text-normal text-left text-upper text-spacing-tight text-color-main edit-title">Product 3 Price</p>
-                <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="prod3-price" type="number" name="prod1-price" placeholder="*Product 3 Price (eg 12.23) ...">
+                <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="prod3-price" step="0.01" type="number" name="prod1-price" placeholder="*Product 3 Price (eg 12.23) ...">
                 <p class="text-base text-normal text-left text-upper text-spacing-tight text-color-main edit-title">Product 4 Description</p>
                 <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="prod4-desc" type="text" name="prod4-desc" placeholder="*Product 4 Description...">
                 <p class="text-base text-normal text-left text-upper text-spacing-tight text-color-main edit-title">Product 4 Price</p>
-                <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="prod4-price" type="number" name="prod4-price" placeholder="*Product 4 Price (eg 12.23) ...">
+                <input class="text-sm text-normal text-left text-spacing-tight text-color-black edit-title" id="prod4-price" step="0.01" type="number" name="prod4-price" placeholder="*Product 4 Price (eg 12.23) ...">
             </div>
         </div>
         
