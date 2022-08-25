@@ -9,10 +9,10 @@
             <form class="gallery-cat-btns" action="<?php echo url_for('gallery.php'); ?>" method="post">
                 <button class="cat-btn" name="category" value="all">all</button>
                 <button class="cat-btn" name="category" value="seascape">seascape</button>
-                <button class="cat-btn" name="category" value="fun">fun images</button>
-                <button class="cat-btn" name="category" value="rural">rural images</button>
-                <button class="cat-btn" name="category" value="moody">moody images</button>
-                <button class="cat-btn" name="category" value="bw">Black & White</button>
+                <button class="cat-btn" name="category" value="animals">animals</button>
+                <button class="cat-btn" name="category" value="rural">rural</button>
+                <button class="cat-btn" name="category" value="moody">moody</button>
+                <button class="cat-btn" name="category" value="bw">Black/White</button>
             </form>
         </div>
 

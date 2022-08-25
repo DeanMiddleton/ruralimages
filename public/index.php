@@ -16,7 +16,7 @@
 
     <?php include(SHARED_PATH . '/header.php'); ?>
 
-    <?php include(SHARED_PATH . '/hero.php'); ?> <!--welcome section -->
+    <?php include(SHARED_PATH . '/hero.php'); ?> 
 
     <?php include(SHARED_PATH . '/gallery-feed.php'); ?>
 
