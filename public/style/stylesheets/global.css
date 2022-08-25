@@ -5,18 +5,6 @@
     box-sizing: border-box; /* include everything in the width/height */
 }
 
-/* fonts */
-
-/* @font-face {
-    font-family: "PoiretOne-Regular";
-    src: url(assets/fonts/PoiretOne-Regular.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: "Limelight-Regular";
-    src: url(assets/fonts/Limelight-Regular.ttf) format('truetype');
-} */
-
 :root {
   
     --colorDecoNeutral: rgb(235, 243, 242);

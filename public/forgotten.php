@@ -10,29 +10,21 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link rel="stylesheet" href="<?php echo url_for('style/stylesheets/global.css'); ?>">
+    <link rel="stylesheet" href="<?php echo url_for('style/stylesheets/custom.css'); ?>">
     <link rel="icon" href="<?php echo url_for('style/assets/logos/DM_Icon.ico'); ?>" type="image/x-icon">
     <title>Rural Images | Thank you</title>
 </head>
 <body>
 
-    <div id="promo-element">
-        <?php include(SHARED_PATH . '/sections/promo.php'); ?> <!--welcome section -->    
-    </div>
+    <?php include(SHARED_PATH . '/header.php'); ?>
 
-    <?php include(SHARED_PATH . '/sections/header.php'); ?>
+    <?php include(SHARED_PATH . '/reset_password.php'); ?>
 
-    <?php include(SHARED_PATH . '/sections/reset_password.php'); ?>
-
-    <?php include(SHARED_PATH . '/sections/footer.php'); ?>
+    <?php include(SHARED_PATH . '/footer.php'); ?>
     
 <script src="<?php echo url_for('style/library.js'); ?>"></script>
 <!-- scripting -->
 <script>
-// promo on="block"/off="none"
-ID("promo-element").style.display = "none";
-
-
-
 </script>
 
 </body>

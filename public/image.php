@@ -15,25 +15,21 @@ $meta = image_by_title($pagenumber);
     <meta name="keywords" content="">
     <meta name="description" content="<?php echo $meta['meta_desc'] . " at Rural Images Photography - ruralimages.co.uk"; ?>">
     <link rel="stylesheet" href="<?php echo url_for('style/stylesheets/global.css'); ?>">
+    <link rel="stylesheet" href="<?php echo url_for('style/stylesheets/custom.css'); ?>">
     <link rel="icon" href="<?php echo url_for('style/assets/logos/DM_Icon.ico'); ?>" type="image/x-icon">
     <title><?php echo $meta['meta_title']; ?></title>
 </head>
 <body>
-    <div id="promo-element">
-        <?php include(SHARED_PATH . '/sections/promo.php'); ?> <!--welcome section -->    
-    </div>
-
-    <?php include(SHARED_PATH . '/sections/header.php'); ?>
-
-    <?php include(SHARED_PATH . '/sections/product-page.php'); ?> 
     
-    <?php include(SHARED_PATH . '/sections/footer.php'); ?>
+    <?php include(SHARED_PATH . '/header.php'); ?>
+
+    <?php include(SHARED_PATH . '/product-page.php'); ?> 
+    
+    <?php include(SHARED_PATH . '/footer.php'); ?>
     
 <script src="<?php echo url_for('style/library.js'); ?>"></script>
 <!-- scripting -->
 <script>
-// promo on="block"/off="none"
-ID("promo-element").style.display = "none";
 
 </script>
 

@@ -1,11 +1,6 @@
 <?php
 
-
-
-
-
 $postPacking = 9.99;
-
 
 require_once('db_auth.php');
 
